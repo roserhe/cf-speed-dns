@@ -1,9 +1,9 @@
 name: 'dns_cf_push'
 
 on:
+  schedule:
     - cron: '10 */24 * * *'
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
